@@ -22,7 +22,7 @@ int alleyEncounter() {
       obj.initializeCombat();
       if (obj.initializeCombat() == 1)
       {
-        cout << "YOU WON!!🥳";
+        cout << "YOU WON!!🥳" << endl;
       }
       else{
          return 0;
