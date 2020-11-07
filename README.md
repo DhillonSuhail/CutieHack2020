@@ -6,7 +6,9 @@ To do:
         2. Combat
             a. Ability Scores
             b. Damage and HP numbers
+            c. Turn System
         3. Decisions
+            a. Encounter System
     Additional Features:
         1. Skill Checks
     
