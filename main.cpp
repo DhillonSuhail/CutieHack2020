@@ -12,7 +12,10 @@ using namespace std;
 
 
 int main() {
-cout << "The year is 2020, the Coronavirus disease has the world quarantined.  DoorDash orders are at an all-time high. You, as a Dasher, have to deliver the food to the customer with perfection, but in doing so, you face many life-threatening obstacles." << endl;
+cout << "The year is 2020..." << endl;
+cout << "The Coronavirus disease has the world quarantined." << endl; 
+cout << "DoorDash orders are at an all-time high. You, as a Dasher, have to deliver the food to the customer with perfection... " << endl;
+cout << "but in doing so, you face many life-threatening obstacles." << endl;
     
     srand(time(0));
     
@@ -21,6 +24,6 @@ cout << "The year is 2020, the Coronavirus disease has the world quarantined.  D
         alleyEncounter();
         hp = 0;
     }
-
+cout << "You have not reached the customer satisfaction." << endl;
     return 0;
 }
