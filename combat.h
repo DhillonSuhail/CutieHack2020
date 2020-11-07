@@ -1,5 +1,6 @@
 class Combat
 {
+    public:
     int enemyhp;
     int enemyStr;
     int enemyDex;
