@@ -4,7 +4,15 @@ using namespace std;
 string input;
 
 void alleyEncounter() {
-    cout << "/*first encounter prompt, tell user to pick what to do*/";
+
+ cout << "You have decided to take a short cut to reduce the delivery time..."<< endl;
+    cout << "THE SKETCHY ALLEY WAY" << endl;
+    cout << "In the alley, you are faced with a theif and are forced to make a life or death decision..." << endl;
+    cout << "Do you:" << endl;
+    cout << " A) Face the theif head-on in a fight!" << endl;
+    cout << " B) Attempt to run away!" << endl;
+    cout << " C) Surrender your wallet!" << endl;
+
     cin >> input;
 
     Combat obj;
