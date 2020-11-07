@@ -1,9 +1,3 @@
-#include <iostream>
-#include <cmath>
-#include <ctime>
-#include <cstdlib>
-using namespace std;
-
 class Combat
 {
     int enemyhp;
