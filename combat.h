@@ -9,6 +9,8 @@ class Combat
     string input;
 
     int damage;
+    int enemyAction;
+    int passthrough;
     
     Combat()
     {
@@ -20,7 +22,12 @@ class Combat
         input = "";
     }
 
-    void initializeCombat()
+    /*
+    Initializa Combat return meanings
+    false- Player has died in combat
+    bool- Player has won
+    */
+    int initializeCombat()
     {
         if (dex >= enemyDex)
         {
@@ -32,6 +39,7 @@ class Combat
             enemyTurn();
         }
         
+        return passthrough;
     }
 
     void playerTurn()
@@ -39,6 +47,7 @@ class Combat
         cout << "How do you want to attack?" << endl;
         cout << "1. Punch" << endl << "2. Kick" << endl << "3. Taunt" << endl;
         cin >> input;
+        cout << endl;
 
         if (input == "1")
         {
@@ -50,7 +59,7 @@ class Combat
             }
 
             enemyhp -= damage;
-            cout << "Your punch deals " << damage << " leaving the enemy at " << enemyhp << " hp.";
+            cout << "Your punch deals " << damage << " damage, leaving the enemy at " << enemyhp << " hp." << endl;
             
             if (enemyhp > 0)
             {
@@ -59,7 +68,7 @@ class Combat
 
             else
             {
-                endCombat();
+                passthrough = 1;
             }
             
         }
@@ -74,7 +83,7 @@ class Combat
             }
 
             enemyhp -= damage;
-            cout << "Your kick deals " << damage << " leaving the enemy at " << enemyhp << " hp.";
+            cout << "Your kick deals " << damage << " damage, leaving the enemy at " << enemyhp << " hp." << endl;
             
             if (enemyhp > 0)
             {
@@ -83,13 +92,31 @@ class Combat
 
             else
             {
-                endCombat();
+                passthrough = 1;
             }
         }
 
         else if (input == "3")
         {
+            damage = 2 + ((wis-10)/2);
             
+            if (damage < 1)
+            {
+                damage = 1;
+            }
+
+            enemyhp -= damage;
+            cout << "Your taunt deals " << damage << " damage, leaving the enemy at " << enemyhp << " hp." << endl;
+            
+            if (enemyhp > 0)
+            {
+                enemyTurn();
+            }
+
+            else
+            {
+                passthrough = 1;
+            }
         }
 
         else
@@ -101,12 +128,60 @@ class Combat
 
     void enemyTurn()
     {
+        enemyAction = ((rand() % 3) + 1);
 
-    }
+        if (enemyAction == 1)
+        {
+            damage = 2 + ((enemyStr-10)/2);
+            
+            if (damage < 1)
+            {
+                damage = 1;
+            }
 
-    void endCombat()
-    {
+            hp -= damage;
 
+            cout << "The enemy punches you, dealing " << damage << " damage, leaving you at " << hp << " hp." << endl;
+        }
+
+        else if (enemyAction == 2)
+        {
+            damage = 2 + ((enemyDex-10)/2);
+            
+            if (damage < 1)
+            {
+                damage = 1;
+            }
+
+            hp -= damage;
+
+            cout << "The enemy kicks you, dealing " << damage << " damage, leaving you at " << hp << " hp." << endl;
+        }
+
+        else
+        {
+            damage = 2 + ((enemyWis-10)/2);
+            
+            if (damage < 1)
+            {
+                damage = 1;
+            }
+
+            hp -= damage;
+
+            cout << "The enemy taunts you, dealing " << damage << " damage, leaving you at " << hp << " hp." << endl;
+        }
+
+        if (hp > 0)
+        {
+            playerTurn();
+        }
+
+        else
+        {
+            passthrough = 0;
+        }
+        
     }
     
 };
