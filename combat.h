@@ -1,13 +1,23 @@
 class Combat
 {
-    int enemyhp = 10 + (rand() % 5) - 2;
-    int enemyStr = 10 + (rand() % 5) - 2;
-    int enemyDex = 10 + (rand() % 5) - 2;
-    int enemyWis = 10 + (rand() % 5) - 2;
+    int enemyhp;
+    int enemyStr;
+    int enemyDex;
+    int enemyWis;
 
-    string input = "";
+    string input;
 
     int damage;
+    
+    Combat()
+    {
+        enemyhp = 10 + (rand() % 5) - 2;
+        enemyStr = 10 + (rand() % 5) - 2;
+        enemyDex = 10 + (rand() % 5) - 2;
+        enemyWis = 10 + (rand() % 5) - 2;
+
+        input = "";
+    }
 
     void initializeCombat()
     {
@@ -26,7 +36,7 @@ class Combat
     void playerTurn()
     {
         cout << "How do you want to attack?" << endl;
-        cout << "1. Punch" << endl << "2. Kick" << "3. Grab" << "4. Taunt";
+        cout << "1. Punch" << endl << "2. Kick" << endl << "3. Taunt" << endl;
         cin >> input;
 
         if (input == "1")
@@ -40,12 +50,22 @@ class Combat
 
             enemyhp -= damage;
             cout << "Your punch deals " << damage << " leaving the enemy at " << enemyhp << " hp.";
-            enemyTurn();
+            
+            if (enemyhp > 0)
+            {
+                enemyTurn();
+            }
+
+            else
+            {
+                endCombat();
+            }
+            
         }
 
         else if (input == "2")
         {
-            damage = 2 + ((str-10)/2);
+            damage = 2 + ((dex-10)/2);
             
             if (damage < 1)
             {
@@ -53,27 +73,22 @@ class Combat
             }
 
             enemyhp -= damage;
-            cout << "Your punch deals " << damage << " leaving the enemy at " << enemyhp << " hp.";
-            enemyTurn();
+            cout << "Your kick deals " << damage << " leaving the enemy at " << enemyhp << " hp.";
+            
+            if (enemyhp > 0)
+            {
+                enemyTurn();
+            }
+
+            else
+            {
+                endCombat();
+            }
         }
 
         else if (input == "3")
         {
             
-        }
-
-        else if (input == "4")
-        {
-            damage = 2 + ((str-10)/2);
-            
-            if (damage < 1)
-            {
-                damage = 1;
-            }
-
-            enemyhp -= damage;
-            cout << "Your punch deals " << damage << " leaving the enemy at " << enemyhp << " hp.";
-            enemyTurn();
         }
 
         else
