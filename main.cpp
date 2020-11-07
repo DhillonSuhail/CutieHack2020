@@ -2,10 +2,19 @@
 #include "classes.h"
 using namespace std;
 
-int test = 10;
+int str = 10;
+int dex = 10;
+int wis = 10;
+int hp = 50;
 
 int main() {
     cout << "Hello World!";
-    cout << test;
+
+    while (hp > 0)
+    {
+
+    }
+
+
     return 0;
 }
