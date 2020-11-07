@@ -1,6 +1,6 @@
 class Enemy
 {
-    bool combat()
+    int enemycombat()
     {
         
     }
