@@ -15,6 +15,6 @@ int main() {
 
     }
 
-    cout << "You Died" << endl;
+    cout << "Gurman Died" << endl;
     return 0;
 }
