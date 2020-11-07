@@ -3,7 +3,7 @@ using namespace std;
 //int hp =main.hp; 
 string input;
 
-void alleyEncounter() {
+int alleyEncounter() {
     cout << "You have decided to take a short cut to reduce the delivery time..."<< endl;
     cout << "THE SKETCHY ALLEY WAY" << endl;
     cout << "In the alley, you are faced with a theif and are forced to make a life or death decision..." << endl;
@@ -20,11 +20,19 @@ void alleyEncounter() {
     {
       Combat obj;
       obj.initializeCombat();
+      if (obj.initializeCombat() == 1)
+      {
+        cout << "YOU WON!!🥳";
+      }
+      else{
+         return 0;
+      }
+      
     }
     else if (input == "2")
     {
-      cout << /*something snarky idk*/
-      math.rand
+      cout << /*something snarky idk*/;
+      int chance = rand() % 10 + 1;
     }
     
     

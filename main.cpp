@@ -21,9 +21,12 @@ cout << "but in doing so, you face many life-threatening obstacles." << endl;
     
     while (hp > 0)
     {
-        alleyEncounter();
-        hp = 0;
+        if (alleyEncounter()==0)
+        {
+            break;
+        }
+        
     }
-cout << "You have not reached the customer satisfaction." << endl;
+cout << "You have not reached the customer satisfaction. 👺" << endl;
     return 0;
 }
