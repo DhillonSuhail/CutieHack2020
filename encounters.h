@@ -1,9 +1,10 @@
 #include <iostream>
 using namespace std;
-
+//int hp =main.hp; 
 
 void alleyEncounter() {
-    cout << "you in alley";
+
+    
 }
     
 

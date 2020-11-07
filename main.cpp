@@ -1,12 +1,12 @@
+int str = 10;
+int dex = 10;
+int wis = 10;
+int hp = 50;
 #include <iostream>
 #include "combat.h"
 #include "encounters.h"
 using namespace std;
 
-int str = 10;
-int dex = 10;
-int wis = 10;
-int hp = 50;
 
 int main() {
 
