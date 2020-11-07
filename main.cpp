@@ -8,7 +8,7 @@ int wis = 10;
 int hp = 50;
 
 int main() {
-    cout << "Welcome to Door Dash: Gulag Trials!";
+    cout << "Welcome to the Game!";
 
     while (hp > 0)
     {
