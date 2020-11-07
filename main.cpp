@@ -6,9 +6,10 @@ int hp = 50;
 #include <ctime>
 #include <cstdlib>
 #include <cmath>
+#include <cstring>
+using namespace std;
 #include "combat.h"
 #include "encounters.h"
-using namespace std;
 
 
 int main() {

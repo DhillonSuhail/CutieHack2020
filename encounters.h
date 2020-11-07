@@ -31,7 +31,7 @@ int alleyEncounter() {
     }
     else if (input == "2")
     {
-      cout << /*something snarky idk*/;
+      //cout << /*something snarky idk*/;
       int chance = rand() % 10 + 1;
     }
     
