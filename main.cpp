@@ -9,13 +9,12 @@ int wis = 10;
 int hp = 50;
 
 int main() {
-    cout << "Welcome to the Game!";
 
     while (hp > 0)
     {
+        alleyEncounter();
         hp = 0;
     }
 
-    cout << "Gurman Died" << endl;
     return 0;
 }
