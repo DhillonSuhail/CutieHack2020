@@ -6,7 +6,7 @@ string input;
 int alleyEncounter() {
     cout << "You have decided to take a short cut to reduce the delivery time..."<< endl;
     cout << "THE SKETCHY ALLEY WAY" << endl;
-    cout << "In the alley, you are faced with a theif and are forced to make a life or death decision..." << endl;
+    cout << "In the alley, you are faced with a thief and are forced to make a life or death decision..." << endl;
     cout << "Do you:" << endl;
     cout << " 1. Face the thief head-on in a fight!" << endl;
     cout << " 2. Attempt to run away!" << endl;
