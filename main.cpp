@@ -1,5 +1,5 @@
 #include <iostream>
-#include "classes.h"
+#include "enemy.h"
 using namespace std;
 
 int str = 10;
@@ -8,7 +8,7 @@ int wis = 10;
 int hp = 50;
 
 int main() {
-    cout << "Hello World!";
+    cout << "Welcome to the Game!";
 
     while (hp > 0)
     {
