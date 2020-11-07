@@ -1,5 +1,5 @@
 #include <iostream>
-#include "classes.h"
+#include "enemy.h"
 using namespace std;
 
 int str = 10;
@@ -8,15 +8,11 @@ int wis = 10;
 int hp = 50;
 
 int main() {
-<<<<<<< HEAD
-    cout << "Welcome to Door Dash: Gulag Trials!";
-=======
-    cout << "Hello World!";
->>>>>>> parent of 385a342... Organization
+    cout << "Welcome to the Game!";
 
     while (hp > 0)
     {
-
+        hp = 0;
     }
 
     cout << "Gurman Died" << endl;
