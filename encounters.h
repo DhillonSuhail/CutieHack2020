@@ -1,8 +1,13 @@
-class encounters{
+#include <iostream>
+using namespace std;
 
+
+void alleyEncounter() {
+    cout << "you in alley";
+}
     
 
-};
+
 
 
 
