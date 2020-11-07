@@ -1,5 +1,5 @@
 #include <iostream>
-#include "enemy.h"
+#include "combat.h"
 using namespace std;
 
 int str = 10;
