@@ -56,10 +56,10 @@ GCC or alternative C++ compiler
 2. Run
 
 ## Contributors
-[Suhail Dhillon](https://github.com/DhillonSuhail)
-[Gurman Dhaliwal](https://github.com/gsinghd)
-[Lorenzo Gonzales](https://github.com/lorenzog1)
-[Albert Sanchez](https://github.com/Albertsanchez700)
+*[Suhail Dhillon](https://github.com/DhillonSuhail)
+*[Gurman Dhaliwal](https://github.com/gsinghd)
+*[Lorenzo Gonzales](https://github.com/lorenzog1)
+*[Albert Sanchez](https://github.com/Albertsanchez700)
 
 
 
