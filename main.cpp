@@ -2,7 +2,7 @@ int str = 10;
 int dex = 10;
 int wis = 10;
 int hp = 50;
-int numencounters = 0;
+int numEncounters = 0;
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -59,8 +59,21 @@ cout << endl;
             }
         }
         
-        numencounters++;
+        numEncounters++;
+
+        if (numEncounters >= 10)
+        {
+            break;
+        }
     }
-cout << "You have not reached the customer satisfaction. " << endl;
+
+    if (numEncounters >= 10)
+    {
+        cout << "You have successfully delivered the order." << endl;
+    }
+    else
+    {
+        cout << "You have not reached the customer satisfaction. " << endl;
+    }
     return 0;
 }
