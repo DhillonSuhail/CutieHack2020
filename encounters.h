@@ -113,15 +113,58 @@ int alleyEncounter() {
 
 int lost() {
   cout << "Uh oh... " << endl;
-  cout << "After all that, you have lost your sense of direction..." << endl;
+  cout << "Along the way, you have lost your sense of direction..." << endl;
   cout << "You see a stranger and want to ask for directions..." << endl; 
-  cout << "but there is a possibility that they counld have coronavirus :O" << endl;
+  cout << "but there is a possibility that they could have coronavirus :O" << endl;
   cout << endl;
   cout << "Do you.." <<endl;
   cout << "1. Risk getting covid and ask them" <<endl;
-  cout << "2. Risk wondering around to get to your destination"<< endl;
+  cout << "2. Risk wandering around to get to your destination"<< endl;
+cin >> input;
+
+
+if (input== "1")
+{
+  int chance = rand() % 10 + 1;
+  if (chance <=5)
+  {
+    cout << "You catch the coronavirus and become sick" << endl;
+    hp =hp-5;
+    dex = dex-5;
+  }
+  else
+  {
+    cout << "You find your way back to where you were going" << endl;
+    wis = wis +10;
+  }
+}
+else
+{
+  int chance = rand() % 10 + 1;
+  if (chance <=5)
+  {
+    cout << "You eventually make your way back but the food goes cold" << endl;
+    wis = wis-5;
+  }
+  else
+  {
+    cout << "You found your way!" << endl;
+    wis = wis +5;
+  }
   
+  
+}
+
+  
+  
+}
+
+
+
+
+
 }  
+
 
 
     
