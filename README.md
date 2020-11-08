@@ -10,7 +10,7 @@
   <h3 align="center"></h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome RPG game to play during the COVID-19 pandemic!
     <br />
     <a href="https://github.com/DhillonSuhail/CutieHack2020/"><strong>Explore the docs »</strong></a>
     <br />
