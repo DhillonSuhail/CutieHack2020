@@ -71,22 +71,10 @@ int alleyEncounter() {
         cout << "You got away!" << endl;
       }
       
-      
-    
- 
-      
-}
-    
-    
 
+}}
 
-
-
-    
-    
-
-
-}
+  
     
 
 
