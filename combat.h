@@ -14,7 +14,7 @@ class Combat
     
     Combat()
     {
-        enemyhp = 10 + ((rand() % 5) - 2) + (numEncounters / 2);
+        enemyhp = 10 + (rand() % 5) - 2 + (numEncounters / 2);
         enemyStr = 10 + (rand() % 5) - 2 + (numEncounters / 2);
         enemyDex = 10 + (rand() % 5) - 2 + (numEncounters / 2);
         enemyWis = 10 + (rand() % 5) - 2 + (numEncounters / 2);

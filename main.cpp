@@ -17,7 +17,7 @@ int main() {
 cout << "The year is 2020..." << endl;
 cout << "The Coronavirus disease has the world quarantined." << endl; 
 cout << "DoorDash orders are at an all-time high. You, as a Dasher, have to deliver the food to the customer with perfection... " << endl;
-cout << "But in doing so, you face many life-threatening obstacles." << endl;
+cout << "In doing so, you face many life-threatening obstacles." << endl;
 cout << endl; 
     
     srand(time(0));
@@ -70,10 +70,12 @@ cout << endl;
     if (numEncounters >= 10)
     {
         cout << "You have successfully delivered the order." << endl;
+        cout << "Game Over" << endl;
     }
     else
     {
-        cout << "You have not reached the customer satisfaction. " << endl;
+        cout << "You have not provided customer satisfaction. " << endl;
+        cout << "Game Over." << endl;
     }
     return 0;
 }

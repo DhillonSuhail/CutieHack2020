@@ -4,9 +4,8 @@ using namespace std;
 string input;
 
 int alleyEncounter() {
-    cout << "You have decided to take a short cut to reduce the delivery time..."<< endl;
-    cout << "THE SKETCHY ALLEY WAY" << endl;
-    cout << "In the alley, you are faced with a thief and are forced to make a life or death decision..." << endl;
+    cout << "You have decided to take a short cut through an alleyway to reduce the delivery time..."<< endl;
+    cout << "In the alley, you are faced with a thief who is demanding your wallet or your life!" << endl;
     cout << "Do you:" << endl;
     cout << " 1. Face the thief head-on in a fight!" << endl;
     cout << " 2. Attempt to run away!" << endl;
@@ -16,7 +15,7 @@ int alleyEncounter() {
 
     while (input != "1" && input != "2" && input != "3")
         {
-          cout << "Enter 1 or 2 or 3" << endl;
+          cout << "Enter 1, 2, or 3" << endl;
           cin >> input;
         }
      
@@ -29,6 +28,7 @@ int alleyEncounter() {
       {
         cout << "You beat him!! Move on! " << endl;
         str++;
+        
       }
       else{
          return 0;
@@ -46,7 +46,7 @@ int alleyEncounter() {
         if (obj.initializeCombat() == 1)
       {
         cout << "You beat him!! Move on! " << endl;
-      
+        
       }
       else{
          return 0;
@@ -56,6 +56,7 @@ int alleyEncounter() {
       {
         cout << "You got away! " << endl;
         dex++;
+        
       }
     }
     else if (input == "3")
@@ -80,12 +81,14 @@ int alleyEncounter() {
         cout << "You got away safetly!" << endl;
         wis++;
       }
-      }}
+      }
+      return 1;
+  }
 
   int hitByCar(){
     int chance = rand() % 10 + 1;
-    cout << "Whew... that was a close one! But wait..." << endl;
-    cout << " THERE IS A CAR SPEEDING IN YOUR DIRECTION!!!"<< endl;
+    cout << "As you continue your journey, you begin to lose focus until a honk snaps you from your daydreaming." << endl;
+    cout << "As you snap back to attention you realize that a car is speeding right towards you!"<< endl;
     cout << endl;
     cout << "Do you..."<< endl;
     cout << "1. Attempt to dodge the car!"<< endl;
@@ -119,17 +122,17 @@ int alleyEncounter() {
       }
       else
       {
+        cout << "The car hits you dead on, everything fades to black." << endl;
         return 0;
       }
     }
+    return 1;
   }
 
 int lost() {
-  cout << "Uh oh... " << endl;
   cout << "Along the way, you have lost your sense of direction..." << endl;
   cout << "You see a stranger and want to ask for directions..." << endl; 
-  cout << "but there is a possibility that they could have coronavirus :O" << endl;
-  cout << endl;
+  cout << "but there is a possibility that they could have coronavirus!" << endl;
   cout << "Do you.." <<endl;
   cout << "1. Risk getting covid and ask them" <<endl;
   cout << "2. Risk wandering around to get to your destination"<< endl;
@@ -148,12 +151,12 @@ if (input== "1")
   {
     cout << "You catch the coronavirus and become sick" << endl;
     hp =hp-5;
-    dex = dex-5;
+    dex = dex-2;
   }
   else
   {
     cout << "You find your way back to where you were going" << endl;
-    wis = wis +10;
+    wis = wis +2;
   }
 }
 else
@@ -176,12 +179,12 @@ else
   else if (chance <=5)
   {
     cout << "You eventually make your way back but the food goes cold" << endl;
-    wis = wis-5;
+    wis = wis-2;
   }
   else
   {
     cout << "You found your way!" << endl;
-    wis = wis +5;
+    wis = wis +2;
   } 
 }
   return 1; 
@@ -189,8 +192,8 @@ else
 
 
 int approachedByAntiMaskers() {
-  cout<< "On your journey to make the delivery, you see something that is so terrifying to someone in a pandemic..." << endl;
-  cout << "A GROUP OF ANTI-MASKERS!" << endl;
+  cout<< "A large group of people are approaching you." << endl;
+  cout << "As you draw nearer you realize that none of the people are wearing a mask!" << endl;
   cout<< endl;
   cout<< "Do you..." << endl;
   cout << "1. Run away!"<<endl;
@@ -212,15 +215,30 @@ if (input == "1")
 else
 {
   int chance = rand() % 10 + 1;
-  if (chance <=8){
-    cout << "You get the COOF"<< endl;
+  
+  if(chance == 1){
+    cout << "One member of the crows sees that you are wearing a mask and becomes infuriated." << endl;
+    cout << "As you are stuck in the crowd, there is little you can do that accept as he challenges you to a fight." << endl;
+
+    Combat obj;
+      if (obj.initializeCombat() == 1)
+      {
+        cout << "As he tumbles to the floor the crowd allows you topass without another word.";
+      }
+       else
+      {
+          return 0;
+      }
+  }
+  else if (chance <=8){
+    cout << "You catch the coranavirus."<< endl;
     hp = hp-10;
-    return 1;
+    if (hp <= 0)
+    {
+      return 0;
+    }
   }
-  else if(chance == 1){
-    cout << "You got a serious case and die"<< endl;
-    return 0;
-  }
+  return 1;
 }
 
 
