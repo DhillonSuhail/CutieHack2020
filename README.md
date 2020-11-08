@@ -55,6 +55,13 @@ GCC or alternative C++ compiler
 1. Compile the code
 2. Run
 
+## Contributors
+[Suhail Dhillon](https://github.com/DhillonSuhail)
+[Gurman Dhaliwal](https://github.com/gsinghd)
+[Lorenzo Gonzales](https://github.com/lorenzog1)
+[Albert Sanchez](https://github.com/Albertsanchez700)
+
+
 
 ## Challenges we ran into
 Initially we struggles to work with github and encountered several instances where changes would not push or pull correctly. As we came to understand how github functions the only other real issue we encountered was calls happening to often or not at they should, which were solved through careful analysis of the code with work arounds being found or errors patched.
@@ -67,3 +74,4 @@ We learned how to properly use github to share our work and work effectively as 
 
 ## What's next for Door Dash Survival
 World Conquest. We shall rise to the top just as Flappy Bird before us.
+
