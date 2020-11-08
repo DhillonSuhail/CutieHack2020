@@ -12,10 +12,10 @@
   <p align="center">
     An awesome RPG game to play during the COVID-19 pandemic!
     <br />
-    <a href="https://github.com/DhillonSuhail/CutieHack2020/"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>View Demo<>/strong</a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/DhillonSuhail/CutieHack2020/">Explore the docs »</a>
     ·
     <a href="https://github.com/DhillonSuhail/CutieHack2020/issues">Report Bug</a>
     ·
