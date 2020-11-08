@@ -28,6 +28,6 @@ cout << "but in doing so, you face many life-threatening obstacles." << endl;
         }
         
     }
-cout << "You have not reached the customer satisfaction. 👺" << endl;
+cout << "You have not reached the customer satisfaction. " << endl;
     return 0;
 }

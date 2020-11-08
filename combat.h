@@ -119,7 +119,7 @@ class Combat
             }
         }
 
-        else
+        if (input != "1" && input != "2" && input != "3")
         {
             cout << "Not an attack, input 1, 2, 3, or 4 in order to select attack" << endl;
             playerTurn();

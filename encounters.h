@@ -19,10 +19,9 @@ int alleyEncounter() {
     if (input == "1")
     {
       Combat obj;
-      obj.initializeCombat();
       if (obj.initializeCombat() == 1)
       {
-        cout << "YOU WON!!🥳" << endl;
+        cout << "You beat him!! Move on! " << endl;
       }
       else{
          return 0;
@@ -33,6 +32,43 @@ int alleyEncounter() {
     {
       //cout << /*something snarky idk*/;
       int chance = rand() % 10 + 1;
+      if (chance <= 3)
+      {
+        cout << "You weren't fast enough, you got caught! " << endl;
+        Combat obj;
+        if (obj.initializeCombat() == 1)
+      {
+        cout << "You beat him!! Move on! " << endl;
+      }
+      else{
+         return 0;
+      }
+      }
+      else
+      {
+        cout << "You got away! " << endl;
+      }
+    }
+    else if (input == "3")
+    {
+      
+      int chance = rand() % 10 + 1;
+      if (chance <= 3)
+      {
+        cout << "He still wants to fight you! " << endl;
+        Combat obj;
+        if (obj.initializeCombat() == 1)
+      {
+        cout << "You beat him and got your wallet back!"
+      }
+      else
+      {
+        return 0;
+      }
+      
+    
+ 
+      
     }
     
     
