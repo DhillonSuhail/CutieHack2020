@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/DhillonSuhail/CutieHack2020.git">
-    <img src="images/doordash.png" alt="Logo" width="80" height="80">
+    <img src="images/doordash.png" alt="Logo" >
   </a>
 
   <h3 align="center">Best-README-Template</h3>
