@@ -14,12 +14,12 @@ int alleyEncounter() {
 
     cin >> input;
 
-    while (input != "1" || input != "2" || input != "3")
+    while (input != "1" && input != "2" && input != "3")
         {
           cout << "Enter 1 or 2 or 3" << endl;
           cin >> input;
         }
-    
+     
     
 
     if (input == "1")
@@ -91,7 +91,7 @@ int alleyEncounter() {
     cout << "1. Attempt to dodge the car!"<< endl;
     cout << "2. Take the hit!" << endl;
     cin >> input;
-    while (input != "1" || input != "2")
+    while (input != "1" && input != "2")
     {
       cout << "Enter 1 or 2" << endl;
       cin >> input;
@@ -135,7 +135,7 @@ int lost() {
   cout << "2. Risk wandering around to get to your destination"<< endl;
 cin >> input;
 
-while (input != "1" || input != "2")
+while (input != "1" && input != "2")
     {
       cout << "Enter 1 or 2" << endl;
       cin >> input;
@@ -198,7 +198,7 @@ int approachedByAntiMaskers() {
 
 cin >> input;
 
-while (input != "1" || input != "2")
+while (input != "1" && input != "2")
     {
       cout << "Enter 1 or 2" << endl;
       cin >> input;
