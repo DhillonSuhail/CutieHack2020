@@ -188,8 +188,13 @@ else
 }
 
 
-int bitByDog() {
-  
+int approachedByAntimaksers() {
+  cout<< "On your journey to make the delivery, you see something that is so terrifying to someone in a pandemic..." << endl;
+  cout << "A GROUP OF ANTI-MASKERS!" << endl;
+  cout<< endl;
+  cout<< "Do you..." << endl;
+  cout << "1. Run away!"<<endl;
+  cout << "2. Attempt to push through the herd!"<<endl; 
 }
 
 
