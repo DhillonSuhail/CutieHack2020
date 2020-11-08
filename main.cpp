@@ -2,6 +2,7 @@ int str = 10;
 int dex = 10;
 int wis = 10;
 int hp = 50;
+int numencounters = 0;
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -20,14 +21,36 @@ cout << "But in doing so, you face many life-threatening obstacles." << endl;
 cout << endl; 
     
     srand(time(0));
-    
+    int encounter = 0;
+
     while (hp > 0)
     {
-        if (alleyEncounter()==0)
+        encounter = (rand() % 4) + 1;
+
+        if (encounter == 1)
         {
-            break;
+            if (alleyEncounter()==0)
+            {
+                break;
+            }
         }
         
+        else if (encounter == 2)
+        {
+
+        }
+
+        else if (encounter == 3)
+        {
+
+        }
+
+        else if (encounter == 4)
+        {
+
+        }
+        
+        numencounters++;
     }
 cout << "You have not reached the customer satisfaction. " << endl;
     return 0;
