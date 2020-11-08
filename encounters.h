@@ -84,9 +84,34 @@ int alleyEncounter() {
     cout << "Do you..."<< endl;
     cout << " 1. Attempt to dodge the car!"<< endl;
     cout << "2. Take the hit!" << endl;
-    if (input)
+    if (input == "1")
     {
-      /* code */
+      if (chance <= 5)
+      {
+        cout << "You barely dodged it!" << endl;
+        dex++;
+      }
+      else
+      {
+        hp = hp/2;
+        cout << "Ouch, you survived but that'll leave a mark, you lose half your health" << endl;
+      }
+    }
+    else if (input == "2")
+    {
+      if (chance <= 5)
+      {
+        cout << "Brave but you are severelly hurt";
+        hp = hp/3;
+      }
+      else
+      {
+        return 0;
+      }
+    }
+  }
+      
+      
     }
     
   }
