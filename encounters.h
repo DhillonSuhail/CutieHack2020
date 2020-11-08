@@ -112,7 +112,15 @@ int alleyEncounter() {
   }
 
 int lost() {
-  cout << 
+  cout << "Uh oh... " << endl;
+  cout << "After all that, you have lost your sense of direction..." << endl;
+  cout << "You see a stranger and want to ask for directions..." ,,endl; 
+  cout << "but there is a possibility that they counld have coronavirus :O" << endl;
+  cout << endl;
+  cout << "Do you.." <<endl;
+  cout << "1. Risk getting covid and ask them" <<endl;
+  cout << "2. Risk wondering around to get to your destination"<< endl;
+  
 }  
 
 
