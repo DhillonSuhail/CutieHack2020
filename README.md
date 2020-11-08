@@ -12,7 +12,7 @@
   <p align="center">
     An awesome RPG game to play during the COVID-19 pandemic!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>View Demo<>/strong</a>
+    <a href="https://youtu.be/5XCbzeu5Id4"><strong>View Demo<>/strong</a>
     <br />
     <br />
     <a href="https://github.com/DhillonSuhail/CutieHack2020/">Explore the docs »</a>
