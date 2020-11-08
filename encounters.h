@@ -150,13 +150,14 @@ else
   {
     cout << "You found your way!" << endl;
     wis = wis +5;
-  }
-  
-  
+  } 
+}
+  return 1; 
 }
 
-  return 1;
-  
+
+int dodgingAntiMaskers() {
+  cout <<
 }
 
 
