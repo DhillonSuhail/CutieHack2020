@@ -78,7 +78,7 @@ int alleyEncounter() {
 
   int hitByCar(){
     int chance = rand() % 10 + 1;
-    cout << "Whew... that was a close one! But wait..."; << endl;
+    cout << "Whew... that was a close one! But wait..." << endl;
     cout << " THERE IS A CAR SPEEDING IN YOUR DIRECTION!!!"<< endl;
     cout << endl;
     cout << "Do you..."<< endl;
@@ -108,10 +108,6 @@ int alleyEncounter() {
       {
         return 0;
       }
-    }
-  }
-      
-      
     }
     
   }
