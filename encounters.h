@@ -78,7 +78,12 @@ int alleyEncounter() {
 
   int hitByCar(){
     int chance = rand() % 10 + 1;
-    cout << /**/;
+    cout << "Whew... that was a close one! But wait..."; << endl;
+    cout << " THERE IS A CAR SPEEDING IN YOUR DIRECTION!!!"<< endl;
+    cout << endl;
+    cout << "Do you..."<< endl;
+    cout << " 1. Attempt to dodge the car!"<< endl;
+    cout << "2. Take the hit!" << endl;
     if (input)
     {
       /* code */
