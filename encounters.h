@@ -22,6 +22,7 @@ int alleyEncounter() {
       if (obj.initializeCombat() == 1)
       {
         cout << "You beat him!! Move on! " << endl;
+        str++;
       }
       else{
          return 0;
@@ -39,6 +40,7 @@ int alleyEncounter() {
         if (obj.initializeCombat() == 1)
       {
         cout << "You beat him!! Move on! " << endl;
+      
       }
       else{
          return 0;
@@ -47,6 +49,7 @@ int alleyEncounter() {
       else
       {
         cout << "You got away! " << endl;
+        dex++;
       }
     }
     else if (input == "3")
@@ -68,13 +71,22 @@ int alleyEncounter() {
       }
       else
       {
-        cout << "You got away!" << endl;
+        cout << "You got away safetly!" << endl;
+        wis++;
       }
-      
+      }}
 
-}}
+  int hitByCar(){
+    int chance = rand() % 10 + 1;
+    cout << /**/;
+    if (input)
+    {
+      /* code */
+    }
+    
+  }
 
-  
+
     
 
 
