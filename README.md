@@ -29,6 +29,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<p align="center">
+  <a href="https://github.com/DhillonSuhail/CutieHack2020.git">
+    <img src="images/screenshot.png" alt="Logo" >
+  </a>
+
 ## Inspiration
 We figured that because people are staying at home during this pandemic they are likely ordering more food through apps like Uber Eats and Door Dash. With this in mind, we wanted to make a slightly exaggerated and satirical take on the state of the Door Dash driver during the times of corona virus.
 
@@ -38,10 +43,7 @@ Door Dash Survival is a text-based rouge-like RPG centered around a Door Dash dr
 ## How we built it
 In order to build Door Dash Survival we worked with github to work collaboratively on the various aspects of the game. Aside from github we used traditional c++ object-oriented programming.
 
-<p align="center">
-  <a href="https://github.com/DhillonSuhail/CutieHack2020.git">
-    <img src="images/screenshot.png" alt="Logo" >
-  </a>
+
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
