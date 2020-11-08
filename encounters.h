@@ -109,8 +109,11 @@ int alleyEncounter() {
         return 0;
       }
     }
-    
   }
+
+int lost() {
+  cout << 
+}  
 
 
     
