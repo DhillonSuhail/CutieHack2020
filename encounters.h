@@ -159,7 +159,21 @@ if (input== "1")
 else
 {
   int chance = rand() % 10 + 1;
-  if (chance <=5)
+  if (chance == 1)
+  {
+    cout << "You happen upon a gang who wants to fight you" << endl;
+    Combat obj;
+    if (obj.initializeCombat() == 1)
+    {
+      cout << "You beat them all up and run!";
+    }
+      else
+    {
+      return 0;
+    }
+  }
+  
+  else if (chance <=5)
   {
     cout << "You eventually make your way back but the food goes cold" << endl;
     wis = wis-5;
@@ -174,12 +188,9 @@ else
 }
 
 
-
-
-
-
-
-
+int bitByDog() {
+  
+}
 
 
 
