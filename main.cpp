@@ -16,7 +16,8 @@ int main() {
 cout << "The year is 2020..." << endl;
 cout << "The Coronavirus disease has the world quarantined." << endl; 
 cout << "DoorDash orders are at an all-time high. You, as a Dasher, have to deliver the food to the customer with perfection... " << endl;
-cout << "but in doing so, you face many life-threatening obstacles." << endl;
+cout << "But in doing so, you face many life-threatening obstacles." << endl;
+cout << endl; 
     
     srand(time(0));
     
