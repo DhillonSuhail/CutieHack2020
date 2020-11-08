@@ -53,7 +53,10 @@ cout << endl;
 
         else if (encounter == 4)
         {
-
+            if (approachedByAntiMaskers()==0)
+            {
+                break;
+            }
         }
         
         numencounters++;

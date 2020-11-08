@@ -188,13 +188,45 @@ else
 }
 
 
-int approachedByAntimaksers() {
+int approachedByAntiMaskers() {
   cout<< "On your journey to make the delivery, you see something that is so terrifying to someone in a pandemic..." << endl;
   cout << "A GROUP OF ANTI-MASKERS!" << endl;
   cout<< endl;
   cout<< "Do you..." << endl;
   cout << "1. Run away!"<<endl;
   cout << "2. Attempt to push through the herd!"<<endl; 
+
+cin >> input;
+
+while (input != "1" || input != "2")
+    {
+      cout << "Enter 1 or 2" << endl;
+      cin >> input;
+    }
+
+if (input == "1")
+{
+  cout << "You get away but drop half your food; no tip for you" << endl;
+  dex = dex-5;
+}
+else
+{
+  int chance = rand() % 10 + 1;
+  if (chance <=8){
+    cout << "You get the COOF"<< endl;
+    hp = hp-10;
+    return 1;
+  }
+  else if(chance == 1){
+    cout << "You got a serious case and die"<< endl;
+    return 0;
+  }
+}
+
+
+
+
+
 }
 
 
