@@ -38,7 +38,10 @@ Door Dash Survival is a text-based rouge-like RPG centered around a Door Dash dr
 ## How we built it
 In order to build Door Dash Survival we worked with github to work collaboratively on the various aspects of the game. Aside from github we used traditional c++ object-oriented programming.
 
-![Alt text](/relative/images/screenshot.png?raw=true)
+<p align="center">
+  <a href="https://github.com/DhillonSuhail/CutieHack2020.git">
+    <img src="images/screenshot.png" alt="Logo" >
+  </a>
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
