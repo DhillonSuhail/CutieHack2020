@@ -37,12 +37,18 @@ cout << endl;
         
         else if (encounter == 2)
         {
-
+            if (hitByCar()==0)
+            {
+                break;
+            }
         }
 
         else if (encounter == 3)
         {
-
+            if (lost()==0)
+            {
+                break;
+            }
         }
 
         else if (encounter == 4)
