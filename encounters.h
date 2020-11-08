@@ -58,18 +58,24 @@ int alleyEncounter() {
         cout << "He still wants to fight you! " << endl;
         Combat obj;
         if (obj.initializeCombat() == 1)
-      {
-        cout << "You beat him and got your wallet back!"
+        {
+        cout << "You beat him and got your wallet back!";
+        }
+        else
+        {
+          return 0;
+        }
       }
       else
       {
-        return 0;
+        cout << "You got away!" << endl;
       }
+      
       
     
  
       
-    }
+}
     
     
 
